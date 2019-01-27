@@ -24,10 +24,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'jquery-rails'
 gem 'materialize-sass'
 gem 'material_icons'
+gem 'hirb'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

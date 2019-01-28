@@ -22,6 +22,13 @@ $( document ).on('turbolinks:load', function() {
   $('.sidenav').sidenav();
 })
 
+document.addEventListener('turbolinks:before-render', () => {
+  const elem = document.querySelector('.sidenav');
+  const instance = M.Sidenav.getInstance(elem);
+  if (instance) {
+    instance.destroy();
+  }
+});
 
 // $(document).ready(function(){
 // });
